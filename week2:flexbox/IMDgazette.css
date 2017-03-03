@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-family: Oswald;
+}
+
+article img {
+    max-width:100%;
+    width:100%;
+}
+
+@media (min-width: 700px) {
+    section {
+        display: flex;
+    }
+
+    article {
+        padding: 1em;
+    }
+
+}
