@@ -1,10 +1,3 @@
-let firstname = "Joris";
-let lastname ="Hens";
-console.log ("Hi " + firstname + " " + lastname);
-console.log(`Hi ${firstname} ${lastname}`);
-
-
-
 function CardApp(){
     this.buttonAddNote = document.getElementById("btnAddNote");
     this.notesContainer = document.querySelector(".notes");
@@ -19,11 +12,11 @@ CardApp.prototype.resetForm = function(){
 }
 
 CardApp.prototype.addNote = function(e){
-    var newNote = document.createElement("div"); //<div> </div>
+    let newNote = document.createElement("div"); //<div> </div>
     newNote.setAttribute("class", "card"); // <div>
     newNote.innerHTML = "<p>" + this.noteInput.value + "</p>";
     
-    var noteLink = document.createElement("a");
+    let noteLink = document.createElement("a");
     noteLink.setAttribute("class", "card-remove");
     noteLink.innerHTML = "Remove";
     noteLink.setAttribute("href", "#");
@@ -37,10 +30,10 @@ CardApp.prototype.addNote = function(e){
 }
 
 CardApp.prototype.removeNote = function (e) {
-    var noteToRemove = e.target.parentElement;
+    let noteToRemove = e.target.parentElement;
     this.notesContainer.removeChild(noteToRemove);
     e.preventDefault();
 }
 
 
-var myApp = new CardApp();
+let myApp = new CardApp();
