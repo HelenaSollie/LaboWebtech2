@@ -59,6 +59,7 @@ class Weather
             
             quote = "Get your sunnies out!";
             backgroundimage = "url(https://s-media-cache-ak0.pinimg.com/564x/12/64/cb/1264cb076a9b036d468db823064186ba.jpg)";
+
         
         } else {
             
@@ -71,7 +72,7 @@ $('#quote').html( quote );
 $('#info').append("<p> Yay! it's " + " " +  DateFormat.format.date(date, 'ddd') + " " + "the" + " " + DateFormat.format.date(date, 'D') +  "</p>");
         
 $('#info').append("<h4>" +  DateFormat.format.date(date, 'HH:mm:ss') + "</h4>");
-        $('#info').append(`<h1>${Math.round(this.weather.temperature)}&deg;C</h1>`);
+        $('#info').append(`<h1>${Math.round(this.weather.temperature)}&deg;C</h1>`);      
         
 $('#info').append(`<h3>${this.place}</h3>`);       
        

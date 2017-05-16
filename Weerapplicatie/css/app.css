@@ -1,5 +1,6 @@
 body{
-    height: 600px;
+    width: 320px;
+    height: 568px;
     margin: 0;
     padding: 0;
     text-align:center;
@@ -21,7 +22,7 @@ body{
 #nav_sweather ul li {
     
     list-style: none;
-    margin-left: 10%;
+    margin-left: 17.5%;
 }
 
 #nav_sweather ul li a {
@@ -46,6 +47,7 @@ body{
 #info {
     
     width: 100%;
+    height: 300px;
     background-color: #A2DED0;
     display: flex;
     flex-direction: column;
@@ -82,7 +84,7 @@ body{
 #info p {
     
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: white;
     margin-top: 50px;
     text-transform: uppercase;
@@ -95,3 +97,6 @@ body{
     color: white;
     
 }
+
+
+    

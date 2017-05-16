@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    background-color: none;
+    
+}
+
+
+#nav_sweather ul  {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#nav_sweather ul li {
+    
+    list-style: none;
+    padding-left: 22.5%;
+}
+
+#nav_sweather ul li a {
+    
+    text-decoration: none;
+    font-size: 2.8em;
+    color:#A2DED0;
+    text-transform: lowercase;
+}
+
+#nav_sweather ul li a:hover {
+    
+    color: #A2DED0;   
+}
+
+#nav_sweather ul li a:active {
+    
+    color:#A2DED0 ;   
+}
+
+h1 {
+    
+    color: black;
+    font-size: 3em;
+}
+
+
+#statementShirts {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 10%;
+}
+
+#statementShirts img {
+    
+    border: 5px solid #A2DED0;
+    margin-top: 50px;
+}
+
+
+
+    
