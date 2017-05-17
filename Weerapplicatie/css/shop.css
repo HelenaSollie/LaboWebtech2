@@ -40,6 +40,12 @@ body{
     color:#A2DED0 ;   
 }
 
+/* shirts */
+
+#shirts {
+    
+    display: none;
+}
 h1 {
     
     color: black;
@@ -62,6 +68,25 @@ h1 {
     margin-top: 50px;
 }
 
+/* sunglasses */
 
+#sunglasses {
+    
+    display: none;
+}
+#sunglasses {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 10%;
+}
+
+#sunglasses img {
+    
+    border: 5px solid #A2DED0;
+    margin-top: 50px;
+}
 
     
