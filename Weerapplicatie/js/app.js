@@ -58,27 +58,24 @@ class Weather
             backgroundimage = "url(https://s-media-cache-ak0.pinimg.com/564x/fc/04/23/fc04236abf12cac6801ef44d86fec6a0.jpg)";
             
         } else if (this.weather.temperature > 20) {
-            
             quote = "Get your sunnies out!";
-            backgroundimage = "url(https://s-media-cache-ak0.pinimg.com/564x/12/64/cb/1264cb076a9b036d468db823064186ba.jpg)";
-            $('#sunglasses').css( "display", block );
-
-        
+            backgroundimage = "url(https://s-media-cache-ak0.pinimg.com/564x/98/65/69/986569fff1cb86c573f0176c4dfa78cb.jpg)";
+            $('#sunglasses').css( "display", "block" );
+            
+            
         } else {
             
             quote = "Wear a statement shirt!";
-            $('#shirts').css( "display", block );
+            $('#shirts').css( "display", "block" );
         } 
         
 $('body').css("background-image", backgroundimage );                
-$('#quote').html( quote );   
-    
+$('#quote').html( quote ); 
         
 $('#info').append("<p> Yay! it's " + " " +  DateFormat.format.date(date, 'ddd') + " " + "the" + " " + DateFormat.format.date(date, 'D') +  "</p>");
         
-$('#info').append("<h4>" +  DateFormat.format.date(date, 'HH:mm:ss') + "</h4>");
-        $('#info').append(`<h1>${Math.round(this.weather.temperature)}&deg;C</h1>`      
-        
+$('#info').append("<h4>" +  DateFormat.format.date(date, 'HH:mm') + "</h4>");
+        $('#info').append(`<h1>${Math.round(this.weather.temperature)}&deg;C</h1>`);        
 $('#info').append(`<h3>${this.place}</h3>`);       
        
     }
@@ -103,4 +100,5 @@ const options = {
     apiKey: '9893261e1d0c9c0e6482fe4cc304df08',
     'el': '#app'
 }
+
 const App = new Weather(options);

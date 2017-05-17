@@ -1,6 +1,6 @@
 body{
-    width: 320px;
-    height: 568px;
+    max-width: 320px;
+    max-height: 568px;
     margin: 0;
     padding: 0;
     text-align:center;
@@ -51,7 +51,7 @@ body{
     background-color: #A2DED0;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 80px;
     
 }
 
@@ -89,12 +89,12 @@ body{
     margin-top: 50px;
     text-transform: uppercase;
 }
-
-#app #quote{
+#quote{
     
     text-align: center;
     font-size: 1.5em;
     color: white;
+    padding-top: 150px;
     
 }
 
