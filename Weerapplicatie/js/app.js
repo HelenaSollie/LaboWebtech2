@@ -49,7 +49,6 @@ class Weather
         var quote;
         var shirts = document.getElementById("shirts");
         var sunglasses = document.getElementById("sunglasses");
-        var sweaters = document.getElementById("sweaters");
         var backgroundimage;
         var date = new Date();
         
@@ -57,7 +56,6 @@ class Weather
             
             quote = "Sweater weather!";
             backgroundimage = "url(https://s-media-cache-ak0.pinimg.com/564x/fc/04/23/fc04236abf12cac6801ef44d86fec6a0.jpg)";
-            $('#sweaters').css( "display", block );
             
         } else if (this.weather.temperature > 20) {
             
